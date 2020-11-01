@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<title>Sign Up - RGIES</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!--Link rel for W3.css -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<!--Link rel for Facebook Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--Link rel for Website Icon -->
+<link rel="icon" href="rgiesicon.png" type="image/gif" sizes="16x16">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<link rel="icon" href="img/rgiesicon.png" type="image/gif" sizes="16x16">
+
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("office.jpg");
+  min-height: 95%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+div.login {
+  margin-top: 65px;
+  margin-left: 50px;
+  margin-right: 50px;
+  background-color: white;
+  padding: 50px;
+  padding-top: 60px;
+}
+
+p.forgotpw {
+  margin-top: 10px;
+}
+p.footer {
+  margin-top: 50px;
+  color: white;
+  font-size:15px;
+}
+
+.monospace{
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4169E1;
+  color: white;
+  padding: 10px 20px;
+  margin: 2px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: 	#191970;
+}
+
+</style>
+<body>
+
+
+  <!-- Navbar Section-->
+  <nav class="w3-bar w3-black">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://localhost/RGIES/index.php#"><i class="material-icons" style="margin-top:8px">arrow_back</i></a>
+          <div class="w3-display-topmiddle">
+          <a href="#" class="w3-bar-item"><img src="rgieswhite.png" width="110" height="25"></a>
+            </div>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container">
+
+    <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4  w3-center">
+          <div class="login">
+          <img src="img/RGIESLOGIN.jpg" class="w3-image" alt="RGIESLOGO" width="300">
+          <div>
+            <h1 class="monospace">SIGN UP</h1>
+            <hr class = "mb-3">
+
+
+            <form action="rgiessignup.php" method="post">
+              <input type="firstname" id="firstname" name="firstname" placeholder="Username" required>
+              <input type="lastname" id="lastname" name="lastname" placeholder="Lastname"  required>
+              <input type="email" id="email" name="email" placeholder="Email Address"  required>
+              <input type="phonenumber" id="phonenumber" name="phonenumber" placeholder="Phone Number" required>
+              <input type="password" id="password" name="password" placeholder="Password" required>
+              <hr class = "mb-3">
+              <input type="submit" value="Sign Up" name="create" style="font-size:20px">
+              <!--
+                <a href="#"><p style="color:DodgerBlue; font-size:18px;" class="forgotpw">Forgot Password</p></a>
+              -->
+            </form>
+          </div>
+          </div>
+          <p class="footer">&#169; 2020 <a href="#home" title="RGIES" class="w3-hover-text-rgies">RGIES.</a> All Rights Reserved.</a></p>
+      </div>
+      <div class="col-sm-4"></div>
+    </div>
+
+</header>
+
+
+
+
+
+</body>
+</html>
